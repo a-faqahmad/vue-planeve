@@ -13,7 +13,9 @@
     "firebase": "^8.6.7",
     "vue": "^3.0.0",
     "vue-google-adsense": "^1.9.3",
-    "vue-router": "^4.0.9"
+    "vue-router": "^4.0.9",
+    "vue-share-buttons": "^1.1.0",
+    "vue-social-sharing": "^3.0.8"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

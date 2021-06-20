@@ -35,12 +35,7 @@
           <li class="nav-item">
             <router-link to="/adandmap" class="nav-link">Maps</router-link>
           </li>
-          <li class="nav-item">
-            <router-link to="/signup" class="nav-link">Sign Up</router-link>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Share a post</a>
-          </li>
+ 
 
           <!-- <li class="nav-item dropdown">
             <a
@@ -71,6 +66,9 @@
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
             Search
           </button>
+          <button class="btn btn-outline-success my-2 my-sm-0" @click="logout()" >
+              LogOut
+          </button>
         </form>
       </div>
     </nav>
@@ -78,11 +76,25 @@
 
 <script>
 
+import firebase from "firebase";
+
 export default {
   methods: {
     printsearch() {
       console.log(this.search);
-    }
+    },
+  logout() {
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        alert('Successfully logged out');
+        this.$router.push('/signup');
+      })
+      .catch(error => {
+        alert(error.message);
+      });
+  },
   },
 
   data() {
