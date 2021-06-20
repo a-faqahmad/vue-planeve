@@ -6,7 +6,7 @@
       </div>
       <p class="location"> {{detail.location}} </p>
       <p class="description"> {{detail.description}} </p>
-      <a href="#">See more ></a>
+      <a href="#">Share a post</a>
   </div>
 </template>
 

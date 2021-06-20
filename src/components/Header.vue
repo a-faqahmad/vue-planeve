@@ -30,17 +30,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
+            <router-link to="/home" class="nav-link">Home <span class="sr-only">(current)</span></router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <router-link to="/adandmap" class="nav-link">Maps</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sign Up</a>
+            <router-link to="/signup" class="nav-link">Sign Up</router-link>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Share a post</a>
+          </li>
+
+          <!-- <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -57,7 +59,7 @@
               <a class="dropdown-item" href="#">Google Analytics</a>
               <a class="dropdown-item" href="#">Share a Post</a>
             </div>
-          </li>
+          </li> -->
         </ul>
         <form @submit.prevent="printsearch" class="form-inline my-2 my-lg-0">
           <input name="search" v-model.lazy.trim="search"

@@ -12,7 +12,8 @@
     "core-js": "^3.6.5",
     "firebase": "^8.6.7",
     "vue": "^3.0.0",
-    "vue-google-adsense": "^1.9.3"
+    "vue-google-adsense": "^1.9.3",
+    "vue-router": "^4.0.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
