@@ -7,6 +7,7 @@ const routes = [
     { path: '/home', component: ShowRests },
     { path: '/signup', component: SignUp },
     { path: '/adandmap', component: adAndMap },
+    { path: '/', component: SignUp}
 ]
 
 const router = createRouter({
